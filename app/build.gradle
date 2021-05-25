@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.materialdesign"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "androidx.recyclerview:recyclerview:1.2.0"
+
+    implementation 'androidx.media:media:1.3.0'
+    //com.android.support:support-media-compat  -> media notifications
+
+    // Material Design ----------------------------------------------------------------------------
+    implementation "com.google.android.material:material:1.4.0-alpha02"
+
+    // third party dependencies -------------------------------------------------------------------
+    implementation 'com.balysv:material-ripple:1.0.2'                                               // Ripple Effect View
+    implementation 'com.github.bumptech.glide:glide:4.12.0'                                         // Glide
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'                                       // Circle Image view
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'                      // Chip Navigation Bar
+    implementation 'com.github.cooltechworks:ScratchView:v1.1'                                      // Scratch View
+
+    // testing
+    implementation project (':RoundImageView')
+
+    //Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.3.1"
+
+    //Room components
+    implementation "androidx.room:room-runtime:2.2.6"
+    annotationProcessor "androidx.room:room-compiler:2.2.6"
+
+    // Scalable Size Units
+    // found the library late so it isn't used in the project.. would be a pain to go change all resources
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+}

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_56"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/collapsed_text_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You've recieved a new notification!"
+        android:textColor="@color/colorPrimary"
+
+        style="@style/TextAppearance.Compat.Notification.Title"
+        />
+
+    <TextView
+        android:id="@+id/collapsed_text_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drag to expand"
+        android:layout_marginTop="@dimen/spacing_4"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        />
+
+</LinearLayout>

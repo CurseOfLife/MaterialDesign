@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    tools:context=".activity.progressbar.ProgressLibrariesActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/spacing_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I came across a good resource !"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plenty of community made libraries, that deal with progress bars all in one place. I did not want to clogg up the app more by implementing a few of the given libraries so here is just the link to the resource. Follow the individual library exmplanations on how to implement them.\n\nThe other link takes us to the base parent of the first link. Plenty of interesting, awesome, libraries for various UI components. "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_32"/>
+
+        <TextView
+            android:id="@+id/link1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_8"/>
+
+        <TextView
+            android:id="@+id/link2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link2"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

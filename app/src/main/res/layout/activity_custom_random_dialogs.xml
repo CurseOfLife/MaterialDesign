@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.dialog.CustomRandomDialogs">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/simple_toolbar" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_56"
+                android:layout_margin="@dimen/spacing_8"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="About"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_8"
+                android:minHeight="@dimen/spacing_56"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="Terms of Service"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_8"
+                android:minHeight="56dp"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="Leave a review"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_8"
+                android:minHeight="@dimen/spacing_56"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="Verification code"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_8"
+                android:minHeight="@dimen/spacing_56"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="Update User"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_8"
+                android:minHeight="@dimen/spacing_56"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="Verification code"
+                android:textColor="@color/white"
+                android:onClick="onDialogItemClicked"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

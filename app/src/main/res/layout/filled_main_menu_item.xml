@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    style="@style/RippleStyleDark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_16">
+
+        <ImageView
+            android:id="@+id/filled_menu_item_image"
+            android:layout_width="@dimen/spacing_24"
+            android:layout_height="@dimen/spacing_32"
+            app:srcCompat="@drawable/ic_error_outline"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/filled_menu_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_weight="1"
+
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+
+            tools:text="Header" />
+
+        <ImageView
+            android:id="@+id/filled_menu_new_item"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="@dimen/spacing_32"
+            android:layout_marginEnd="@dimen/spacing_16"
+
+            android:layout_gravity="center_vertical"
+            android:tint="@color/colorAccentDark"
+            app:srcCompat="@drawable/ic_fiber_new_white_24dp" />
+
+        <ImageView
+            android:id="@+id/filled_item_arrow"
+            android:layout_width="@dimen/spacing_24"
+            android:layout_height="@dimen/spacing_32"
+
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_arrow_drop"
+            android:tint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_books"
+        android:icon="@drawable/ic_book"
+        android:title="Books"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorites"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/fingerprint"
+        android:icon="@drawable/ic_fingerprint_white_24dp"
+        android:title="Fingerprint"
+       app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/error"
+        android:icon="@drawable/ic_error_outline"
+        android:title="Error"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

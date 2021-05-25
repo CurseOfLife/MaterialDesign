@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/custom_toast_one_parent"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/custom_toast_one_card"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/spacing_32"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="@dimen/spacing_8"
+        android:visibility="visible"
+        app:cardBackgroundColor="#66FFFFFF"
+        app:cardCornerRadius="@dimen/spacing_4"
+        app:cardElevation="@dimen/spacing_2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16">
+
+            <TextView
+                android:id="@+id/custom_toast_one_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Toast Text"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

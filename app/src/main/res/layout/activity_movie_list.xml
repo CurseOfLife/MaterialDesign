@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/movieBackground"
+    tools:context=".activity.list.MovieList">
+
+  <LinearLayout
+      android:id="@+id/toolbarParent"
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      android:background="@color/colorPrimary"
+      android:gravity="center_vertical"
+      android:padding="10dp"
+      android:orientation="horizontal"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+
+
+      <ImageView
+          android:id="@+id/btn_previous_activity"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:contentDescription="@string/app_name"
+          android:src="@drawable/ic_arrow_back_white_24dp"
+          app:tint = "@color/movieTextIcons"/>
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="MOVIES"
+          android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+          android:textColor="@color/movieTextIcons"
+          android:fontFamily="monospace"/>
+
+      <ImageView
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:contentDescription="@string/app_name"
+          android:src="@drawable/search_24"
+          app:tint ="@color/movieTextIcons"/>
+
+  </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moviesRecylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/btn_addToWatchList"
+        app:layout_constraintTop_toBottomOf="@id/toolbarParent"
+        tools:listitem="@layout/item_movie_list"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_addToWatchList"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/movieAccent"
+        android:text="Add To Watchlist"
+        android:textAllCaps="false"
+        android:textColor="@color/movieTextIcons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:textSize="15sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

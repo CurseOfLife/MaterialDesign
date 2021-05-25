@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_300"
+
+    style="@style/RippleStyleDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_16">
+
+        <ImageView
+            android:id="@+id/menu_item_image"
+            android:layout_width="@dimen/spacing_32"
+            android:layout_height="@dimen/spacing_32"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_error_outline"
+            />
+
+        <TextView
+            android:id="@+id/menu_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_weight="1"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_100"
+            android:layout_gravity="center_vertical"
+
+            tools:text="Header Name" />
+
+    </LinearLayout>
+
+
+</com.balysv.materialripple.MaterialRippleLayout>

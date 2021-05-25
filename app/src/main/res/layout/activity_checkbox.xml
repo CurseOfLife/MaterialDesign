@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan_900"
+    android:orientation="vertical"
+    tools:context=".activity.selectioncontrol.CheckboxActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_layout_shadow"
+            android:elevation="@dimen/spacing_8"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_56"
+                android:layout_weight="1"
+                android:buttonTint="@color/white"
+                android:padding="@dimen/spacing_4"
+                android:text="Normal"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_56"
+                android:layout_weight="1"
+                android:buttonTint="@color/yellow_600"
+                android:padding="@dimen/spacing_4"
+                android:text="White"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:background="@drawable/linear_layout_shadow"
+            android:elevation="@dimen/spacing_8"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_56"
+                android:layout_marginStart="@dimen/spacing_2"
+                android:layout_weight="1"
+                android:button="@drawable/colored_checkbox_green"
+                android:buttonTint="#5FFFBB"
+                android:padding="@dimen/spacing_4"
+                android:text="Full Color"
+                android:textColor="#5FFFBB"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_56"
+                android:layout_weight="1"
+                android:button="@drawable/colored_checkbox_pink_36dp"
+                android:buttonTint="#FF49F1"
+                android:padding="@dimen/spacing_4"
+                android:text="Bigger"
+                android:textColor="#FF49F1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:text="SUBMIT"
+            android:textAllCaps="true"
+
+            />
+
+        <EditText
+            android:id="@+id/editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_80"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:hint="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:enabled="false"
+            android:clickable="false" />
+
+    </LinearLayout>
+</LinearLayout>

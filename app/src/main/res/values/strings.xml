@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Material Design</string>
+    <string name="android_implementation_of_material_ui_components_based_on_google_design_guidelines_work_in_progress">Android implementation of material UI components based on \nGoogle Design Guidelines.\n\nDevelopment \nincludes extensive use of \nAndroid Developer Documentation.\n\nTo save time, corners had to be cut. In other words some layouts \nwere used as placeholders \ninstead of creating a new specified layout the activity requires.</string>
+    <string name="version_2_0">Version 2.0</string>
+    <string name="long_notification_text">Većim delom svoga toka reka Drina protiče kroz tesne gudure između strmih planina ili kroz duboke kanjone okomito odsečenih obala. Samo na nekoliko mesta rečnog toka njene se obale proširuju u otvorene doline i stvaraju, bilo na jednoj bilo na obe strane neke, župne, delimično ravne, delimično talasaste predele, odesne za obrađivanje i naselja.</string>
+    <string name="long_text">Keeping up with friends is faster and easier than ever with the Facebook Lite app! Use Facebook Lite as a friends app to connect and keep up with your social network. The Facebook Lite app is small, allowing you to save space on your phone and use Facebook in 2G conditions. Many of the classic features of Facebook are available on the app, such as sharing to a Timeline, liking photos, searching for people, and editing your profile and groups.</string>
+
+    <string name="terms_of_service">Facebook builds technologies and services that enable people to connect with each other, build communities, and grow businesses. These Terms govern your use of Facebook, Messenger, and the other products, features, apps, services, technologies, and software we offer (the Facebook Products or Products), except where we expressly state that separate terms (and not these) apply. These Products are provided to you by Facebook, Inc.
+        \n\nFacebook builds technologies and services that enable people to connect with each other, build communities, and grow businesses. These Terms govern your use of Facebook, Messenger, and the other products, features, apps, services, technologies, and software we offer (the Facebook Products or Products), except where we expressly state that separate terms (and not these) apply. These Products are provided to you by Facebook, Inc.
+        \n\nFacebook builds technologies and services that enable people to connect with each other, build communities, and grow businesses. These Terms govern your use of Facebook, Messenger, and the other products, features, apps, services, technologies, and software we offer (the Facebook Products or Products), except where we expressly state that separate terms (and not these) apply. These Products are provided to you by Facebook, Inc.
+  </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="section_format">Tab Section : %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notes_about">In the notes app I\'ve tried to implement the newest ways of android development.\n\nLiveData, Room, MVVM are topics for themselves, ones which I still haven\'t researched to the fullest.\n\nFor example I\'ve spent a week or so on researching ways to sort the live data list by asc or desc, and also filter it by priority.  </string>
+    <string name="price_strike"><strike>\u20b9 1400</strike> <font fgcolor="red"> \u20b9 1200 </font></string>
+    <string name="price">\u20b9 1400</string>
+    <string name="flat200">FLAT200</string>
+    <string name="flat_200_offer">Get flat \u20b9 200 off with</string>
+    <string name="clothing_title">Basics Blue Casuals</string>
+    <string name="scratch_for_offer">Scratch to get offer :</string>
+    <string name="select_size">Select Size:</string>
+    <string name="scratch_to_find_image">Prove you are not a robot : Scratch and tell what was the image</string>
+</resources>

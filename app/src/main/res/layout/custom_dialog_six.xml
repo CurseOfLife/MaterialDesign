@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/spacing_32"
+            android:layout_marginTop="@dimen/spacing_32"
+            app:cardBackgroundColor="@color/colorAccentLight"
+            app:cardCornerRadius="@dimen/spacing_4"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_48"
+                    android:fontFamily="casual"
+                    android:text="Join the team"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/spacing_24"
+                    android:layout_marginTop="@dimen/spacing_24"
+                    android:layout_marginEnd="@dimen/spacing_24"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="We need someone with your skillset to solve challenging problems "
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+             <Space
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/spacing_56"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_32"
+            android:layout_marginTop="@dimen/spacing_32"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:layout_marginBottom="@dimen/spacing_16"
+            android:background="@drawable/rounded_button_three"
+            android:text="pass"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|start"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_32"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:layout_marginBottom="@dimen/spacing_16"
+            android:background="@drawable/rounded_button_two"
+            android:text="join"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|end"
+            />
+
+
+        <ImageView
+            android:layout_width="@dimen/spacing_64"
+            android:layout_height="@dimen/spacing_64"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_two"
+            android:src="@drawable/firefox"
+            app:tint="@color/red_800"
+            android:padding="1dp"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

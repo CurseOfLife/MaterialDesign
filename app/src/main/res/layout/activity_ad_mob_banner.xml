@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    tools:context=".activity.banner.AdMobBanner">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/spacing_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You wish to add Ads to your app?"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In previous examples in this app we have seen that banners are not currently supported in Material Design on the Android platform, as well as how we can implement our own Banners, normal and continual ones.\n\nA use-case of Banners that comes to mind is in Ads.\n\nWe can still use the ones from before, but there is another option if we wish to include Google Ads inside our App. For more information check the following links:"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_32"/>
+
+        <TextView
+            android:id="@+id/link1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_8"/>
+
+        <TextView
+            android:id="@+id/link2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_16"/>
+
+        <TextView
+            android:id="@+id/link3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link3"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_8"/>
+
+        <TextView
+            android:id="@+id/link4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link4"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

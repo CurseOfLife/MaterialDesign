@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    tools:context=".activity.button.SpeedDialTwoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Click the Fab"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+
+    <View
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:focusable="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="end|right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_fab_child_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end|right"
+                android:layout_margin="@dimen/spacing_8"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/spacing_4"
+                app:cardElevation="@dimen/spacing_2"
+                app:contentPadding="@dimen/spacing_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Fab Child One"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_child_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_16"
+                android:layout_marginRight="@dimen/spacing_16"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:clickable="true"
+                android:tint="@color/grey_800"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:rippleColor="@color/black"
+                app:srcCompat="@drawable/ic_book"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="@dimen/spacing_8"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fab_child_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end|right"
+                android:layout_margin="@dimen/spacing_8"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/spacing_4"
+                app:cardElevation="@dimen/spacing_2"
+                app:contentPadding="@dimen/spacing_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Fab Child Two"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_child_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_16"
+                android:layout_marginRight="@dimen/spacing_16"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:clickable="true"
+                android:tint="@color/grey_800"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:rippleColor="@color/black"
+                app:srcCompat="@drawable/ic_event_note_white_24dp"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="@dimen/spacing_8"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_fab_child_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end|right"
+                android:layout_margin="@dimen/spacing_8"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/spacing_4"
+                app:cardElevation="@dimen/spacing_2"
+                app:contentPadding="@dimen/spacing_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Fab Child Three"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_child_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_16"
+                android:layout_marginRight="@dimen/spacing_16"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:clickable="true"
+                android:tint="@color/grey_800"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"
+                app:rippleColor="@color/black"
+                app:srcCompat="@drawable/ic_school_white_24dp"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="@dimen/spacing_8"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/parent_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_marginBottom="@dimen/spacing_16"
+            android:clickable="true"
+            android:tint="@color/white"
+            app:fabSize="normal"
+            app:rippleColor="@color/white"
+            app:srcCompat="@drawable/ic_add_white_24dp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

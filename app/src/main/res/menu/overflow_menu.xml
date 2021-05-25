@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/error"
+        android:icon="@drawable/ic_error_outline"
+        android:orderInCategory="100"
+        android:title="Info"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_book"
+        android:icon="@drawable/ic_book"
+        android:orderInCategory="100"
+        android:title="Book"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_school"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_school_white_24dp"
+        android:title="School"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+
+
+</menu>

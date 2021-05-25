@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_200"
+
+    style="@style/RippleStyleDark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/spacing_8"
+        android:paddingBottom="@dimen/spacing_8"
+        android:paddingLeft="@dimen/spacing_16"
+        android:paddingRight="@dimen/spacing_16"
+       >
+
+        <TextView
+            android:id="@+id/sub_menu_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_40"
+            android:layout_weight="1"
+
+            android:textColor="@color/grey_900"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_gravity="center_vertical"
+            tools:text="Name" />
+
+        <ImageView
+            android:id="@+id/sub_menu_sub_new_item"
+            android:layout_marginEnd="@dimen/spacing_40"
+            android:layout_width="@dimen/spacing_32"
+            android:layout_height="@dimen/spacing_32"
+
+            android:layout_gravity="center_vertical"
+            android:tint="@color/colorAccentDark"
+            app:srcCompat="@drawable/ic_fiber_new_white_24dp" />
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/spacing_32"
+    android:id="@+id/wizard_item_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_56">
+
+        <ImageView
+            android:id="@+id/wizard_item_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:padding="@dimen/spacing_32"
+            android:src="@drawable/lifecycle"
+             />
+
+        <TextView
+            android:id="@+id/wizard_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the title"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_8"/>
+
+        <TextView
+            android:id="@+id/wizard_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:text="This is the description"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

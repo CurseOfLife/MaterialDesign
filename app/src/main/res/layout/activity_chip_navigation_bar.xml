@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    tools:context=".activity.bottomnavigation.ChipNavigationBar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_56"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_below="@id/appbar"
+        android:layout_margin="@dimen/spacing_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spice up your bottom navigation bar by using the Chip Navigation Bar library"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It's an interesting library that incorporates the bottom navigation bar with chips. Plus some fancy animations.\n\nIt also has the capability of showing badges or even displaying the menu vertically, as well as changing its design as showed in this example.\n\nFor a more detailed look check the library itself at the following link: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_32"/>
+
+        <TextView
+            android:id="@+id/link1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link1"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_160"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click on the bottom navigation menu items to see the library in action. "/>
+
+    </LinearLayout>
+
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_56"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chip_bottomnav_border"
+        android:elevation="@dimen/spacing_16"
+        android:padding="@dimen/spacing_8"
+        app:cnb_menuResource="@menu/chip_bottomnav_menu"
+        />
+
+
+
+
+</RelativeLayout>

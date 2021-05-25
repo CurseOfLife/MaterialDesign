@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wizardItemParent">
+<!-- With relative layout we can position the childs anywhere
+ in relation to themselves or the parent
+  -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/spacing_4"
+        app:cardElevation="@dimen/spacing_4">
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="368dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+              >
+
+                <ImageView
+                    android:id="@+id/wizardItemImage"
+                    android:layout_width="200dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/spacing_32"
+                    android:layout_marginEnd="@dimen/spacing_32"
+                    android:layout_marginTop="@dimen/spacing_32"
+                    android:layout_weight="1"
+                    android:padding="@dimen/spacing_8"
+                    android:src="@drawable/my_logo"
+                    />
+
+                <TextView
+                    android:id="@+id/wizardItemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:text="Title One"
+                    android:textColor="@color/grey_800"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+                <TextView
+                    android:id="@+id/wizardItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:layout_marginBottom="@dimen/spacing_16"
+                    android:text="This here is the description\nThis here is the description"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_500"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

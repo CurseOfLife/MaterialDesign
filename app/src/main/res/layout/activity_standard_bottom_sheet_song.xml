@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    tools:context=".activity.bottomsheet.StandardBottomSheetSong">
+
+    <!-- home bar  -->
+    <include
+        android:id="@+id/home_bar"
+        layout="@layout/home_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/standard_bottom_sheet_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_100"
+        android:orientation="vertical"
+        android:clickable="true"
+
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="68dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_expand_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minWidth="@dimen/spacing_56"
+
+                    android:minHeight="@dimen/spacing_56"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_up_white_24dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This Here Is The Songname"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This Here Is The Song Artist"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_300" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minWidth="@dimen/spacing_56"
+
+                    android:minHeight="@dimen/spacing_56"
+                    app:srcCompat="@drawable/ic_play_arrow_white_24dp" />
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/song_progressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_4"
+
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="2"
+                android:progressDrawable="@drawable/song_progress_bar"
+
+                android:thumb="@dimen/spacing_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_16"
+
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_weight="0.05"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Is this the real life?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_700" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.05"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_equalizer_white_24dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_16"
+
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_weight="0.05"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Is this just fantasy?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_700" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.05"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_equalizer_white_24dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_16"
+
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_weight="0.05"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Caught in a landslide"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_700" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.05"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_equalizer_white_24dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_16"
+
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_weight="0.05"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="No escape from reality."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_700" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.05"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_equalizer_white_24dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_16"
+
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_weight="0.05"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Shepherd's Tale"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_700" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/spacing_56"
+                    android:minHeight="@dimen/spacing_56"
+                    android:layout_marginStart="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.05"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_equalizer_white_24dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

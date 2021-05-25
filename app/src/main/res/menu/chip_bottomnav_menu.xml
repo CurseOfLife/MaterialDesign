@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        app:cnb_iconColor ="#fff"
+        app:cnb_textColor ="#fff"
+        app:cnb_backgroundColor = "#ff785b"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/books"
+        android:icon="@drawable/ic_book"
+        app:cnb_iconColor ="#fff"
+        app:cnb_textColor ="#fff"
+        app:cnb_backgroundColor = "#ff785b"
+        android:title="Books"
+        />
+
+    <item android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorite"
+        app:cnb_iconColor ="#fff"
+        app:cnb_textColor ="#fff"
+        app:cnb_backgroundColor = "#ff785b"
+        android:title="Favorites"
+        />
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.materialdesign">
+
+    <application
+        android:name=".utility.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activity.other.other2.ViewFlipperActivity" />
+        <activity android:name=".activity.progressbar.ProgressLibrariesActivity" />
+        <activity android:name=".activity.other.scratch.ScratchImageViewDemo" />
+        <activity android:name=".activity.other.scratch.ScratchTextViewDemo" />
+        <activity android:name=".activity.other.scratch.ScratchViewActivity" />
+        <activity android:name=".activity.list.MovieList" />
+        <activity android:name=".activity.card.RandomCards" />
+        <activity android:name=".activity.bottomnavigation.ChipNavigationBar" />
+        <activity android:name=".activity.banner.AdMobBanner" />
+        <activity android:name=".ToDo.AboutNoteActivity" />
+        <activity android:name=".activity.progressbar.SimpleProgressBarActivity" />
+        <activity android:name=".ToDo.InsertOrUpdateNoteActivity" />
+        <activity android:name=".ToDo.NoteMainActivity" />
+        <activity android:name=".ToDo.NotesWizardActivity" />
+        <activity android:name=".activity.tablayout.ScrollableTabActivity" />
+        <activity android:name=".activity.tablayout.TextIconTabActivity" />
+        <activity android:name=".activity.tablayout.IconTabActivity" />
+        <activity android:name=".activity.tablayout.SimpleTabActivity" />
+        <activity android:name=".activity.list.GridListActivity" />
+        <activity android:name=".activity.toastsnack.SnackbarActivity" />
+        <activity android:name=".activity.toastsnack.ToastActivity" />
+        <activity android:name=".activity.slider.SeekBarActivity" />
+        <activity android:name=".activity.pickers.ColorPickerActivity" />
+        <activity android:name=".activity.pickers.TimePickerActivity" />
+        <activity android:name=".activity.pickers.DatePickerActivity" />
+        <activity android:name=".activity.menu.CustomDrawerActivityTwo" />
+        <activity android:name=".activity.menu.ListItemPopupMenuActivity" />
+        <activity android:name=".activity.menu.ToolbarOverflowMenuActivity" />
+        <activity android:name=".activity.menu.RightDrawerActivity" />
+        <activity android:name=".activity.menu.CustomDrawerActivity" />
+        <activity android:name=".activity.menu.SimpleTuckedInDrawerActivity" />
+        <activity android:name=".activity.menu.SimpleMenuDrawerActivity" />
+        <activity android:name=".activity.text.VariousTextTypesActivity" />
+        <activity android:name=".activity.banner.NormalBannerActivity" />
+        <activity android:name=".activity.banner.ContinualBannerActivity" />
+        <activity android:name=".activity.list.DraggableListGestureActivity" />
+        <activity android:name=".activity.list.SwipeListGestureActivity" />
+        <activity android:name=".activity.button.SpeedDialTwoActivity" />
+        <activity android:name=".activity.button.SpeedDialFabActivity" />
+        <activity android:name=".activity.button.ExtendedFabActivity" />
+        <activity android:name=".activity.MDPatchNotesActivity" />
+        <activity android:name=".activity.toolbar.CollapsePinToolbarActivity" />
+        <activity android:name=".activity.toolbar.CollapsingToolbarActivity" />
+        <activity android:name=".activity.chips.ChoiceChipActivity" />
+        <activity android:name=".activity.chips.FilterChipActivity" />
+        <activity android:name=".activity.chips.EntryChipActivity" />
+        <activity android:name=".activity.chips.ActionChipActivity" />
+        <activity android:name=".activity.selectioncontrol.SwitchesActivity" />
+        <activity android:name=".activity.selectioncontrol.RadioButtonActivity" />
+        <activity android:name=".activity.selectioncontrol.CheckboxActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.card.SetupWizard" />
+        <activity android:name=".activity.card.OverlapCard" />
+        <activity android:name=".activity.card.SimpleCard" />
+        <activity android:name=".activity.button.SimpleButtonTypes" />
+        <activity android:name=".activity.badge.DeviceNotifications" />
+        <activity android:name=".activity.badge.SimpleBadge" />
+        <activity android:name=".activity.bottomsheet.ModalDialogBottomSheet" />
+        <activity android:name=".activity.bottomsheet.ModalFullscreenBottomSheet" />
+        <activity android:name=".activity.bottomsheet.StandardBottomSheetSong" />
+        <activity android:name=".activity.bottomsheet.ExpandingBottomSheet" />
+        <activity android:name=".activity.bottomsheet.StandardBottomSheet" />
+        <activity android:name=".activity.bottomnavigation.BottomAppBarVersionOne" />
+        <activity android:name=".activity.dialog.CustomRandomDialogs" />
+        <activity android:name=".activity.dialog.DialogFullscreen" />
+        <activity android:name=".activity.dialog.DialogSimple" />
+        <activity android:name=".activity.bottomnavigation.BottomNavigationSimple" />
+        <activity android:name=".activity.InitialActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".broadcasts.NotificationBroadcastReciever" />
+        <receiver android:name=".broadcasts.MessageBroadcastReciever" />
+        <receiver android:name=".broadcasts.CustomNotificationBroadcastReciever" />
+    </application>
+
+</manifest>

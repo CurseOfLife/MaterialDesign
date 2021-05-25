@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="Information"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_prices"
+        android:orderInCategory="100"
+        android:title="Prices"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_compare"
+        android:orderInCategory="100"
+        android:title="Compare"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="Save"
+        app:showAsAction="never" />
+
+</menu>
